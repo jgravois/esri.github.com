@@ -23,7 +23,7 @@
     "static-site": "^1.2.0"
   },
   "engines": {
-    "node": ">=0.12"
+    "node": ">=4"
   },
   "homepage": "http://esri.github.io",
   "keywords": [
@@ -45,6 +45,6 @@
     "start": "parallelshell 'npm run build' 'http-server ./built -p 1337' 'rerun-script'",
     "build": "static-site -s ./source -b ./built --template _layout.html --block content",
     "watch": "rerun-script",
-    "deploy": "scrape, build, push to master"
+    "deploy": "./bin/deploy.sh"
   }
 }
