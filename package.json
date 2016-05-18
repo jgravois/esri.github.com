@@ -1,0 +1,50 @@
+{
+  "name": "esri.github.com",
+  "description": "Curated landing page for Esri's Open Source projects.",
+  "version": "2.0.0",
+  "author": "John Gravois <jgravois@esri.com>",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/esri/esri.github.com"
+  },
+  "contributors": [
+    "Nikolas Wise <nikolaswise@gmail.com>",
+    "John Gravois <jgravois@esri.com>"
+  ],
+  "main": "dist/node/index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "calcite-web": "github:esri/calcite-web#v1.0.0-beta.22",
+    "http-server": "^0.9.0",
+    "mkdirp": "^0.5.1",
+    "node-sass": "^3.4.2",
+    "parallelshell": "^2.0.0",
+    "rerun-script": "^0.6.0",
+    "static-site": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=0.12"
+  },
+  "homepage": "http://esri.github.io",
+  "keywords": [
+    "arcgis",
+    "esri",
+    "open source"
+  ],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/esri/esri.github.com.git"
+  },
+  "watches": {
+    "build": [
+      "source/*.html"
+    ]
+  },
+  "scripts": {
+    "start": "parallelshell 'npm run build' 'http-server ./built -p 1337' 'rerun-script'",
+    "build": "static-site -s ./source -b ./built --template _layout.html --block content",
+    "watch": "rerun-script",
+    "deploy": "scrape, build, push to master"
+  }
+}

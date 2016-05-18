@@ -1,0 +1,83 @@
+<!doctype html>
+<!--[if lt IE 9]>  <html class="ie lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]>     <html class="ie ie9"> <![endif]-->
+<!--[if !IE]><!--> <html> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Calcite Web</title>
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <!-- get calcite-web css from the cdn (use latest version) -->
+    <link rel="stylesheet" href="https://s3-us-west-1.amazonaws.com/patterns.esri.com/files/calcite-web/1.0.0-beta.22/css/calcite-web.min.css">
+    <!--[if lt IE 9]>
+      <script src="/assets/javascripts/libs/selectivizr.js"></script>
+      <script src="/assets/javascripts/libs/html5shiv.js"></script>
+    <![endif]-->
+    <style>
+      .sub-nav {
+        height: 150px;
+        background-image: url("http://esri.github.io/calcite-web/assets/img/banner.jpg");
+      }
+    </style>
+  </head>
+  <body>
+    <div class="drawer drawer-left js-drawer" data-drawer="top-nav" tabindex="0">
+      <nav class="drawer-nav" role="navigation">
+        <aside class="side-nav">
+          <h2 class="side-nav-title">Esri Open Source</h2>
+          <a href="/" class="side-nav-link">About</a>
+          <a href="/" class="side-nav-link">Explore</a>
+        </aside>
+      </nav>
+    </div>
+
+    <div class="wrapper">
+      <header class="top-nav">
+        <div class="grid-container">
+          <div class="column-24">
+            <div class="tablet-hide">
+              <a href="#" class="top-nav-title ">Esri Open Source</a>
+              <nav class="top-nav-list" role="navigation" aria-labelledby="topnav">
+                <a class="top-nav-link is-active" href="#">About</a>
+                <a class="top-nav-link" href="https://github.com/Esri">Explore</a>
+              </nav>
+            </div>
+            <div class="tablet-show">
+              <a href="/" class="icon-ui-menu top-nav-title js-drawer-toggle" data-drawer="top-nav">Esri Open Source</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- banner -->
+      <header class="sub-nav" role="banner">
+        <!--div class="grid-container">
+          <div class="column-24">
+          </div>
+        </div-->
+      </header>
+
+      <div class="grid-container">
+        <main>
+          <!-- Main Content -->
+          <!-- Article, Search Results, other Content -->
+          {% block content %}{% endblock %}
+        </main>
+      </div>
+
+      <!-- content of page -->
+    </div>
+    <div class="footer" role="contentinfo">
+      <!-- content of footer -->
+    </div>
+
+    <!-- get calcite-web js from the cdn (use latest version) -->
+    <script src="https://s3-us-west-1.amazonaws.com/patterns.esri.com/files/calcite-web/1.0.0-beta.22/js/calcite-web.min.js"></script>
+
+    <!-- interactive patterns need to be initialized -->
+    <script>
+       calcite.init()
+    </script>
+  </body>
+</html>
