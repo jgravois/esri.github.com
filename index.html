@@ -1,0 +1,187 @@
+<!doctype html>
+<!--[if lt IE 9]>  <html class="ie lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]>     <html class="ie ie9"> <![endif]-->
+<!--[if !IE]><!--> <html> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>Calcite Web</title>
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <!-- get calcite-web css from the cdn (use latest version) -->
+    <link rel="stylesheet" href="https://s3-us-west-1.amazonaws.com/patterns.esri.com/files/calcite-web/1.0.0-beta.22/css/calcite-web.min.css">
+    <!--[if lt IE 9]>
+      <script src="/assets/javascripts/libs/selectivizr.js"></script>
+      <script src="/assets/javascripts/libs/html5shiv.js"></script>
+    <![endif]-->
+    <style>
+      .sub-nav {
+        height: 150px;
+        background-image: url("http://esri.github.io/calcite-web/assets/img/banner.jpg");
+      }
+    </style>
+  </head>
+  <body>
+    <div class="drawer drawer-left js-drawer" data-drawer="top-nav" tabindex="0">
+      <nav class="drawer-nav" role="navigation">
+        <aside class="side-nav">
+          <h2 class="side-nav-title">Esri Open Source</h2>
+          <a href="/" class="side-nav-link">About</a>
+          <a href="/" class="side-nav-link">Explore</a>
+        </aside>
+      </nav>
+    </div>
+
+    <div class="wrapper">
+      <header class="top-nav">
+        <div class="grid-container">
+          <div class="column-24">
+            <div class="tablet-hide">
+              <a href="#" class="top-nav-title ">Esri Open Source</a>
+              <nav class="top-nav-list" role="navigation" aria-labelledby="topnav">
+                <a class="top-nav-link is-active" href="#">About</a>
+                <a class="top-nav-link" href="https://github.com/Esri">Explore</a>
+              </nav>
+            </div>
+            <div class="tablet-show">
+              <a href="/" class="icon-ui-menu top-nav-title js-drawer-toggle" data-drawer="top-nav">Esri Open Source</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- banner -->
+      <header class="sub-nav" role="banner">
+        <div class="grid-container">
+          <div class="column-16 pre-4 post-4 text-center padding-leader-3 padding-trailer-3">
+            <a href="#" class="btn">About Esri open-source</a>
+            <a href="#" class="btn">Explore more open-source projects</a>
+          </div>
+        </div>
+      </header>
+
+      <div class="grid-container">
+        <main>
+          <!-- Main Content -->
+          <!-- Article, Search Results, other Content -->
+          <div class="leader-1">
+  <p>
+    Esri believes that spatial thinking can address the world's most difficult problems and enable communities to work together. Central to our mission is the development of advanced technology that enables you to be innovative by providing a stable data management and analysis platform that is built and extended through open-source code.
+  </p>
+  <p>
+    These projects cover the entire ArcGIS platform, from user applications to data analysis and visualization. Learn more about our many open-source products and tools that you are free to use, modify, contribute to. We look forward to working together.
+  </p>
+  <div class="trailer-2">
+  </div>
+  <h5>Publishing and Sharing</h5>
+  <hr/>
+</div>
+
+  <div class='column-12 tablet-column-6 phone-column-6'>
+    placeholder
+  </div>
+
+  <div class='column-12 tablet-column-6 phone-column-6'>
+    <p>
+      The Smithsonian maintains vast archives of cultural heritage.  They use StoryMaps to provide the rich history and spatial context of our world.
+    </p>
+    <p>
+      Learn more about <a href='http://storymaps.arcgis.com/en/'>StoryMaps</a>
+    </p>
+  </div>
+
+    <div class="card card-bar-blue column-8 tablet-column-4 phone-column-6">
+      <div class="card-body">
+        <h4>Spyglass</h4>
+        <p class="font-size--2 text-darker-gray">Web Application for comparing two maps.</p>
+        <p class="font-size--1 avenir-italic">JavaScript star 62</p>
+      </div>
+      <a href="https://github.com/Esri/swipe-map-storytelling-template-js" class="btn btn-clear btn-fill">Learn More</a>
+    </div>
+    <div class="card card-bar-blue column-8 tablet-column-4 phone-column-6">
+      <div class="card-body">
+        <h4>Historic Map Explorer</h4>
+        <p class="font-size--2 text-darker-gray">Web Application to explore digitized map overlays.</p>
+        <p class="font-size--1 avenir-italic">JavaScript star 62</p>
+      </div>
+      <a href="https://github.com/Esri/map-collection-explorer" class="btn btn-clear btn-fill">Learn More</a>
+    </div>
+    <div class="card card-bar-blue column-8 tablet-column-4 phone-column-6">
+      <div class="card-body">
+        <h4>Open Data</h4>
+        <p class="font-size--2 text-darker-gray">Web components for integrating data into civic sites.</p>
+        <p class="font-size--1 avenir-italic">JavaScript star 62</p>
+      </div>
+      <a href="https://opendata.arcgis.com" class="btn btn-clear btn-fill">Learn More</a>
+    </div>
+
+  <div class='leader-1 column-24 tablet-column-12 phone-column-6'>
+    <h5>Data Management</h5>
+    <hr/>
+  </div>
+
+  <div class='column-24 tablet-column-12 phone-column-6'>
+    <div class='column-12 tablet-column-6 phone-column-6'>
+      placeholder
+    </div>
+    <div class='column-12 tablet-column-6 phone-column-6'>
+      <p>
+        US Census measures and shares national statistic data about every single household across the United States. To make their data easily accessible to application developers they developed CitySDK which uses the <a href='https://github.com/Esri/Terraformer'>Terraformer</a> library to convert between Esri JSON and GeoJSON.
+      </p>
+      <p>
+        Learn more about <a href='https://github.com/Esri/Terraformer'>Terraformer</a> and <a href='http://uscensusbureau.github.io/citysdk/'>CitySDK</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="card card-bar-blue column-6 tablet-column-6 phone-column-6">
+    <div class="card-body">
+      <h4>Koop</h4>
+      <p class="font-size--2 text-darker-gray">Node server to integrate custom Web APIs with ArcGIS.</p>
+      <p class="font-size--1 avenir-italic">JavaScript star 62</p>
+    </div>
+    <a href="https://koopjs.github.io/" class="btn btn-clear btn-fill">Learn More</a>
+  </div>
+  <div class="card card-bar-blue column-6 tablet-column-6 phone-column-6">
+    <div class="card-body">
+      <h4>Terraformer</h4>
+      <p class="font-size--2 text-darker-gray">Library to convert common spatial data formats.</p>
+      <p class="font-size--1 avenir-italic">JavaScript star 62</p>
+    </div>
+    <a href="https://github.com/Esri/Terraformer" class="btn btn-clear btn-fill">Learn More</a>
+  </div>
+  <div class="card card-bar-blue column-6 tablet-column-6 phone-column-6">
+    <div class="card-body">
+      <h4>Geometry Engine</h4>
+      <p class="font-size--2 text-darker-gray">Library for fundamental spatial types and analyses.</p>
+      <p class="font-size--1 avenir-italic">Java star 62</p>
+    </div>
+    <a href="https://opendata.arcgis.com" class="btn btn-clear btn-fill">Learn More</a>
+  </div>
+  <div class="card card-bar-blue column-6 tablet-column-6 phone-column-6">
+    <div class="card-body">
+      <h4>OSM Editor</h4>
+      <p class="font-size--2 text-darker-gray">Desktop toolbox for accessing and editing OpenStreetMap</p>
+      <p class="font-size--1 avenir-italic">.NET star 62</p>
+    </div>
+    <a href="https://opendata.arcgis.com" class="btn btn-clear btn-fill">Learn More</a>
+  </div>
+
+        </main>
+      </div>
+
+      <!-- content of page -->
+    </div>
+    <div class="footer" role="contentinfo">
+      <!-- content of footer -->
+    </div>
+
+    <!-- get calcite-web js from the cdn (use latest version) -->
+    <script src="https://s3-us-west-1.amazonaws.com/patterns.esri.com/files/calcite-web/1.0.0-beta.22/js/calcite-web.min.js"></script>
+
+    <!-- interactive patterns need to be initialized -->
+    <script>
+       calcite.init()
+    </script>
+  </body>
+</html>
